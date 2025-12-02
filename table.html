@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Таблицы йоу/title>
+         <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <table class="my-table">
+            <caption>Счет</caption>
+            <thead>
+                <tr>
+                    <th>Наименование</th>
+                    <th>Цена</th>
+                    <th>Количество</th>
+                    <th>Стоимость</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Тренер по отношениям</td>
+                    <td>50 &#8381;</td>
+                    <td rowspan="2">1</td>
+                    <td>200 &#8381;</td>
+                </tr>
+                <tr>
+                    <td>Киберспортсмен</td>
+                    <td>1500 &#8381;</td>
+                    <td>5000 &#8381;</td>
+                </tr>
+                <tr>
+                    <td>Тренер по геншину</td>
+                    <td>1 &#8381;</td>
+                    <td>52</td>
+                    <td>133 &#8381;</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Итого</td>
+                    <td>676</td>
+                </tr>
+                
+            </tbody>
+        </table>
+        
+        <form id="register" action="">
+            <label for="login">Введите номер карты</label><br>
+            <input type="text" id="login" name="login" placeholder="Логин" required><br>
+            <label for="pass">Введите пароль</label><br>
+            <input type="password" id="pass" name="pass" placeholder="Пароль" required><br>
+            
+            <input type="radio" id="student" name="role" checked>
+            <label for="student">Студент</label><br>
+            <input type="radio" id="teacher" name="role">
+            <label for="teacher">Учитель</label><br>
+            
+            <label for="occupation">Направления обучения</label><br>
+            <select name="occupation" id="occupation">
+                <option value="it">программист</option>
+                <option value="design">дизайнер</option>
+                <option value="manage">менеджер</option>
+            </select> <br>
+
+            <label for="about">о себе</label><br>
+            <textarea name="about" id="about" rows="5" cols="20">лол</textarea><br>
+
+            <input type="submit" value="зарегестрироваться">
+            <input type="reset">
+
+        
+        </form>
+
+
+    </body>
+</html>
